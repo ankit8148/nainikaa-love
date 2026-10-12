@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe4ec">
+<title>For Nainikaa 💗 — From Ankit</title>
+<style>
+:root{--pink:#ff6f9f;--rose:#e94e86;--cream:#fff8fb;--ink:#65364a;--soft:#ffe4ed}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family: ui-rounded,"Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,#fff7fa,#ffe4ed 48%,#fff8fb);overflow-x:hidden}
+button{font:inherit}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-50px;opacity:.6;animation:floatUp linear forwards;filter:drop-shadow(0 4px 8px #ff9fbd55)}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;max-width:780px;margin:auto;padding:18px 16px 70px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 2px}
+.brand{font-weight:900;letter-spacing:.3px;color:var(--rose)}
+.pill{border:1px solid #ffc0d4;background:#ffffffb8;border-radius:99px;padding:10px 14px;color:var(--rose);font-weight:800;cursor:pointer}
+.hero{min-height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px 14px}
+.eyebrow{display:inline-block;background:#fff;border:1px solid #ffd1df;border-radius:99px;padding:8px 14px;font-size:.82rem;font-weight:800;color:var(--rose);box-shadow:0 8px 24px #d75d8512}
+h1{font-size:clamp(2.8rem,12vw,5.6rem);line-height:.98;letter-spacing:-3px;margin:24px 0 16px;color:#d9417c}
+h1 span{display:block;color:#ff86ad;font-family:Georgia,serif;font-style:italic;font-weight:500}
+.subtitle{max-width:520px;font-size:1.05rem;line-height:1.75;color:#86536a;margin:0 auto 26px}
+.cta{border:0;border-radius:99px;padding:15px 22px;color:white;font-weight:900;background:linear-gradient(135deg,#ff8ab0,#e84f88);box-shadow:0 12px 25px #e94e8640;cursor:pointer;transition:transform .2s}
+.cta:active{transform:scale(.97)}
+.scrollhint{margin-top:38px;color:#b77a91;font-size:.85rem}
+section{margin:22px 0 30px;padding:26px 20px;border:1px solid #ffd4e1;border-radius:28px;background:#ffffffc9;box-shadow:0 18px 45px #d65c8410;backdrop-filter:blur(8px)}
+.kicker{text-transform:uppercase;letter-spacing:2px;font-size:.72rem;font-weight:900;color:#ed6d98;text-align:center}
+h2{text-align:center;font-family:Georgia,serif;font-weight:600;font-size:clamp(1.9rem,7vw,3rem);margin:10px 0 16px;color:#b93870}
+.center{text-align:center}
+.poem{max-width:560px;margin:auto;text-align:center;font-family:Georgia,serif;font-size:clamp(1.1rem,4vw,1.35rem);line-height:1.95;color:#744158}
+.poem .pink{color:#e64f87;font-style:italic}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.photo{min-height:180px;border:2px dashed #f4a6c0;border-radius:20px;background:linear-gradient(145deg,#fff0f5,#ffe0eb);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:15px;color:#bb6284;overflow:hidden;position:relative}
+.photo .emoji{font-size:2.4rem;margin-bottom:8px}
+.photo small{line-height:1.5}
+.photo input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.photo:has(img[style*="display: block"]){border-style:solid}
+.photo .tag{position:absolute;bottom:8px;left:8px;right:8px;background:#ffffffd9;border-radius:12px;padding:6px;font-size:.78rem}
+.letter-wrap{perspective:1000px;text-align:center}
+.envelope{max-width:430px;margin:22px auto 0;background:linear-gradient(145deg,#ffb5cb,#ff8eb2);padding:20px;border-radius:18px;box-shadow:0 15px 30px #dc568333;cursor:pointer;border:1px solid #ff8fb3}
+.envelope-top{font-size:3rem}
+.envelope strong{display:block;color:#fff;font-size:1.15rem;margin:8px}
+.envelope p{color:#fff8fb;margin:6px 0}
+.letter{display:none;text-align:left;background:#fffafc;border:1px solid #ffd4e1;border-radius:18px;padding:22px;margin:16px auto 0;max-width:520px;line-height:1.9;box-shadow:0 12px 30px #c94a7d14;animation:openLetter .7s ease both}
+.letter.show{display:block}
+@keyframes openLetter{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.signature{font-family:Georgia,serif;font-style:italic;font-size:1.4rem;color:#df4f87}
+.proposal{text-align:center;background:radial-gradient(circle at top,#fff,#fff0f5 65%,#ffe2ec)}
+.bigheart{font-size:4rem;animation:heartbeat 1.25s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.14)}30%{transform:scale(1)}45%{transform:scale(1.09)}}
+.question{font-family:Georgia,serif;font-size:clamp(1.65rem,6vw,2.5rem);line-height:1.35;color:#c53d77}
+.answer-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+#yesMessage{display:none;margin-top:20px;background:#fff;border-radius:18px;padding:18px;line-height:1.8;color:#b93870;animation:openLetter .5s ease both}
+footer{text-align:center;padding:25px 8px 0;color:#ad6c86;font-size:.88rem;line-height:1.8}
+.sparkle{display:inline-block;animation:twinkle 1.7s infinite alternate}
+@keyframes twinkle{to{transform:rotate(18deg) scale(1.25);opacity:.6}}
+@media(max-width:420px){main{padding-left:12px;padding-right:12px}.photo{min-height:150px}section{padding:23px 15px}.hero{min-height:78vh}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<main>
+<nav><div class="brand">♡ A little love note</div><button class="pill" id="musicBtn" type="button">♫ Play music</button></nav>
+<header class="hero">
+<div class="eyebrow"><span class="sparkle">✦</span> MADE WITH LOVE, JUST FOR YOU <span class="sparkle">✦</span></div>
+<h1>Hey, <span>Nainikaa</span> ♡</h1>
+<p class="subtitle">I made you a tiny corner of the internet, because one simple message could never hold all the ways you make my world feel softer and brighter.</p>
+<button class="cta" onclick="document.getElementById('poem').scrollIntoView({behavior:'smooth'})">Open your little surprise 💌</button>
+<div class="scrollhint">made by Ankit, with all my heart ↓</div>
+</header>
+
+<section id="poem">
+<div class="kicker">a few words for you</div>
+<h2>If I could give you anything…</h2>
+<div class="poem">
+I'd give you the mornings painted gold,<br>
+And a hand to hold when the world feels cold.<br>
+I'd give you the stars, the moon above,<br>
+But somehow, they're smaller than <span class="pink">my love.</span><br><br>
+Your laugh is my favorite melody,<br>
+Your smile is my sweetest memory.<br>
+And wherever this little life may go,<br>
+You're the kind of magic I hope you'll always know.<br><br>
+If my heart had a favorite place to be,<br>
+It would be right beside you, <span class="pink">you and me.</span> ♡
+</div>
+</section>
+
+<section>
+<div class="kicker">our little gallery</div>
+<h2>Moments I'd keep forever 📸</h2>
+<p class="center">Tap a frame to add one of your photos. They stay on this page while it is open; add your pictures to the site files before sharing if you want everyone to see them.</p>
+<div class="photo-grid">
+<label class="photo"><span class="emoji">🩷</span><strong>Our favorite moment</strong><small>Tap to add a photo</small><input type="file" accept="image/*" aria-label="Add favorite photo" onchange="loadPhoto(this)"><img alt="Your favorite photo"><span class="tag">my favorite memory</span></label>
+<label class="photo"><span class="emoji">🌷</span><strong>Your pretty smile</strong><small>Tap to add a photo</small><input type="file" accept="image/*" aria-label="Add smile photo" onchange="loadPhoto(this)"><img alt="Photo of Nainikaa"><span class="tag">the smile I adore</span></label>
+<label class="photo"><span class="emoji">🧸</span><strong>Just us</strong><small>Tap to add a photo</small><input type="file" accept="image/*" aria-label="Add couple photo" onchange="loadPhoto(this)"><img alt="Couple photo"><span class="tag">my safe place</span></label>
+<label class="photo"><span class="emoji">✨</span><strong>A memory to keep</strong><small>Tap to add a photo</small><input type="file" accept="image/*" aria-label="Add memory photo" onchange="loadPhoto(this)"><img alt="A favorite memory"><span class="tag">one for the scrapbook</span></label>
+</div>
+</section>
+
+<section>
+<div class="kicker">open when you're ready</div>
+<h2>A letter from Ankit 💌</h2>
+<div class="letter-wrap">
+<div class="envelope" role="button" tabindex="0" onclick="toggleLetter()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleLetter()}">
+<div class="envelope-top">💌</div><strong>To my Nainikaa</strong><p>There's something I want you to know…</p><span>Tap to open ♡</span>
+</div>
+<div class="letter" id="letter">
+Dear Nainikaa,<br><br>
+I don't know if I can ever find the perfect words for what you mean to me. But I know this: you make ordinary days feel special, little things feel meaningful, and my heart feel a little more at home.<br><br>
+I hope you never forget how precious you are—not because of what you do for anyone, but simply because you're you. I want to celebrate your happy days, sit beside you on the hard ones, laugh at silly things with you, and keep making memories that we'll smile about later.<br><br>
+This little website isn't grand, but every word here comes from a real place in my heart. Thank you for being my favorite notification, my unexpected smile, and one of the sweetest parts of my life.<br><br>
+Whatever tomorrow brings, I hope I get to keep choosing you, one day at a time.<br><br>
+<span class="signature">Always cheering for you,</span><br><strong>Ankit ♡</strong>
+</div>
+</div>
+</section>
+
+<section class="proposal">
+<div class="kicker">one last little question</div>
+<div class="bigheart">💗</div>
+<h2 class="question">Nainikaa, will you keep making beautiful memories with me?</h2>
+<p class="center">More smiles, more silly moments, more hand-holding, more us. No pressure—just a little question from someone who cares about you a lot.</p>
+<div class="answer-buttons">
+<button class="cta" onclick="sayYes()">Yes, let's make memories! 💞</button>
+<button class="pill" onclick="sendHug()">Sending you a hug 🫂</button>
+</div>
+<div id="yesMessage">You just made Ankit's heart do a happy little dance! 💃💗<br>Here's to our next beautiful memory, Nainikaa. ♡</div>
+</section>
+<footer>
+<div style="font-size:1.5rem">♡</div>
+Made with love, a little courage, and lots of heart.<br>
+<strong>Ankit → Nainikaa</strong><br><small>PS: You can come back to this little love note whenever you need a smile.</small>
+</footer>
+</main>
+<script>
+const hearts = document.getElementById('hearts');
+function floatHeart(){
+ const el=document.createElement('span'); el.className='heart';
+ const choices=['♡','♥','💕','💗','✧']; el.textContent=choices[Math.floor(Math.random()*choices.length)];
+ el.style.left=Math.random()*100+'%'; el.style.fontSize=(14+Math.random()*24)+'px';
+ el.style.animationDuration=(7+Math.random()*7)+'s'; hearts.appendChild(el);
+ setTimeout(()=>el.remove(),14500);
+}
+for(let i=0;i<13;i++)setTimeout(floatHeart,i*330);
+setInterval(floatHeart,800);
+function toggleLetter(){document.getElementById('letter').classList.toggle('show')}
+function loadPhoto(input){
+ const file=input.files&&input.files[0]; if(!file)return;
+ const card=input.closest('.photo'), img=card.querySelector('img'), reader=new FileReader();
+ reader.onload=()=>{img.src=reader.result;img.style.display='block';card.querySelector('.emoji').style.display='none';card.querySelector('strong').style.display='none';card.querySelector('small').style.display='none';};
+ reader.readAsDataURL(file);
+}
+function sayYes(){document.getElementById('yesMessage').style.display='block';confettiHearts();document.getElementById('yesMessage').scrollIntoView({behavior:'smooth',block:'center'})}
+function sendHug(){alert('A giant warm hug is on its way to you, Nainikaa! 🫂💗 — Ankit')}
+function confettiHearts(){for(let i=0;i<24;i++)setTimeout(floatHeart,i*70)}
+// A gentle original melody is synthesized in-browser; no external music or download is required.
+let audioCtx=null, musicTimer=null, noteIndex=0, playing=false;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,880,783.99,659.25,587.33];
+function playNote(){
+ if(!audioCtx||!playing)return;
+ const now=audioCtx.currentTime, osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+ osc.type='sine';osc.frequency.value=notes[noteIndex%notes.length];
+ gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(0.055,now+0.08);gain.gain.exponentialRampToValueAtTime(0.0001,now+0.65);
+ osc.connect(gain);gain.connect(audioCtx.destination);osc.start(now);osc.stop(now+0.7);
+ noteIndex++;
+}
+document.getElementById('musicBtn').addEventListener('click',async()=>{
+ const btn=document.getElementById('musicBtn');
+ if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==='suspended')await audioCtx.resume();
+ playing=!playing;
+ if(playing){playNote();musicTimer=setInterval(playNote,520);btn.textContent='♫ Pause music';}
+ else{clearInterval(musicTimer);btn.textContent='♫ Play music';}
+});
+</script>
+</body>
+</html>
